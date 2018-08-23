@@ -1,0 +1,11 @@
+.jumbotron {
+    background-image: url("electronic_circuit.jpeg");
+    opacity: 0.9;
+    background-size: cover;
+    padding-bottom: 20%;
+    padding-top: 20%;
+}
+
+.banner-content {
+    color: orangered;
+}
