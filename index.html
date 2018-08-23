@@ -11,6 +11,9 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 
         <link rel="stylesheet" href="style.css">
@@ -26,21 +29,21 @@
                 <div class="collapse navbar-collapse" id="navbar-itens">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Projetos</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Projetos <i class="fas fa-project-diagram"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index: 1001;">
                                 <a class="dropdown-item" href="#">Projetos Web</a>
                                 <a class="dropdown-item" href="#">Projetos C++</a>
                                 <a class="dropdown-item" href="#">Projetos Eletronica</a>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Github</a>
+                            <a class="nav-link" href="#">Github <i class="fab fa-github"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Linkedin</a>
+                            <a class="nav-link" href="#">Linkedin <i class="fab fa-linkedin"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato<span class="glyphicon glyphicon-film"></span></a>
+                            <a class="nav-link" href="#">Contato <i class="fas fa-envelope"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -52,12 +55,12 @@
             </div>
         </div>
         <!--------------PRESENTATION-------------->
-        <div class="container">
+        <div class="container-fluid py-5 px-5">
             <div class="row">
                 <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
-                    <img class="img-fluid" src="giovanni_face.jpg">
+                    <img class="img-fluid" src="giovanni_face.jpg" style="border-radius: 50%;">
                 </div>
-                <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9">
+                <div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 py-5 px-5">
                     <p>Formado em Automacao Industrial pelo IFRJ. Ex-membro da Equipe Jaguar de Robotica Aplicada. Atualmente cursando Engenharia de Computacao pela UTFPR.</p>
                 </div>
             </div>
@@ -65,53 +68,65 @@
         <br>
 
         <!--------------CONHECIMENTOS-------------->
-        <div class="container">
+        <div class="container-fluid py-5 px-5" style="background-color: lightsalmon;">
             <div class="page-header">
                 <h1>Conhecimentos</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <div class="row py-3 px-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" align="center">
+                    <i class="fas fa-language fa-7x py-3 px-3"></i>
                     <p>Linguas: Portugues (nativo), Ingles (avancado), Frances (basico)</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <p>Pacote Ofice: Word, Excel, PowerPoint</p>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" align="center">
+                    <i class="fas fa-file-word fa-7x py-3 px-3"></i>
+                    <p >Word, Excel, PowerPoint</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <p>OS: Linux, Windows, MacOSX</p>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-" align="center">
+                    <i class="fas fa-desktop fa-7x py-3 px-3"></i>
+                    <p>Linux, Windows, MacOSX</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <p>Softwares Graficos: Corel Draw, AutoCad</p>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" align="center">
+                    <i class="fas fa-pencil-alt fa-7x py-3 px-3"></i>
+                    <p>Corel Draw, AutoCad</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <p>Linguagens: C/C++, JavaScript, HTML, CSS</p>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" align="center">
+                    <i class="fas fa-file-code fa-7x py-3 px-3"></i>
+                    <p>C/C++, JavaScript, HTML, CSS</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" align="center">
+                    <i class="fas fa-book fa-7x py-3 px-3"></i>
                     <p>Bibliotecas C/C++: Allegro 5</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <p>Banco de Dados: MongoDB</p>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" align="center">
+                    <i class="fas fa-database fa-7x py-3 px-3"></i>
+                    <p>MongoDB</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <p>Frameworks JavaScript: jQuery, Bootstrap, NodeJS, p5.js</p>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" align="center">
+                    <i class="fab fa-js-square fa-7x py-3 px-3"></i>
+                    <p>jQuery, Bootstrap, NodeJS, p5.js</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                    <p>Node Libraries: Express, Socket.io</p>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" align="center">
+                    <i class="fab fa-node-js fa-7x py-3 px-3"></i>
+                    <p>Express, Socket.io</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" align="center">
+                    <i class="fas fa-microchip fa-7x py-3 px-3"></i>
                     <p>Arduino</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" align="center">
+                    <i class="fab fa-git-square fa-7x py-3 px-3"></i>
                     <p>Git</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" align="center">
+                    <i class="fas fa-file-alt fa-7x py-3 px-3"></i>
                     <p>LaTeX</p>
                 </div>
             </div>
         </div>
 
         <!--------------p5.js Projects-------------->
-        <div class="container">
-            <div class="row">
+        <div class="container-fluid py-5 px-5" style="background-color: lightseagreen;">
+            <div class="row py-5 px-5">
                 <div id="p5Carousel" class="col-lg-5 carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#p5Carousel" data-slide-to="0" class="active"></li>
@@ -137,7 +152,7 @@
                         <span class="carousel-control-next-icon"></span>
                     </a>
                 </div>
-                <div class="col-lg-7 ">
+                <div class="col-lg-7 py-5 px-5">
                     <h1>Projetos utilizando a biblioteca grafica p5.js</h1>
                 </div>
             </div>
@@ -145,16 +160,16 @@
 
         <!--------------C++ Projects-------------->
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 ">
+        <div class="container-fluid py-5 px-5">
+            <div class="row py-5 px-5">
+                <div class="col-lg-7 py-5 px-5">
                     <h1>Projetos utilizando C++ e Allegro</h1>
                 </div>
-                <div id="p5Carousel" class="col-lg-5 carousel slide" data-ride="carousel">
+                <div id="cppCarousel" class="col-lg-5 carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#p5Carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#p5Carousel" data-slide-to="1"></li>
-                        <li data-target="#p5Carousel" data-slide-to="2"></li>
+                        <li data-target="#cppCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#cppCarousel" data-slide-to="1"></li>
+                        <li data-target="#cppCarousel" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -168,10 +183,10 @@
                             <img class="d-block w-100" src="giovanni_logo.jpg" alt="Second slide">
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#p5Carousel" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#cppCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
-                    <a class="carousel-control-next" href="#p5Carousel" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#cppCarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
                 </div>
