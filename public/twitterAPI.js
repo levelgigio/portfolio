@@ -32,35 +32,39 @@ $(document).ready(function () {
 
 
     $("#pin-btn").click(function() {
-        cb.__call(
-            "oauth_accessToken",
-            {oauth_verifier: document.getElementById("twitter-pin").value},
-            function (reply,rate,err) {
-                if (err) {
-                    console.log("error response or timeout exceeded" + err.error);
-                }
-                if (reply) {
-                    // store the authenticated token, which may be different from the request token (!)
-                    alert("Autenticou! ou assim espero kk");
-                    $("#tweet-btn").removeClass("disabled");
-                    cb.setToken(reply.oauth_token, reply.oauth_token_secret);
-                }
+        if(!$("#pin-btn").hasClass("disabled")) {
+            cb.__call(
+                "oauth_accessToken",
+                {oauth_verifier: document.getElementById("twitter-pin").value},
+                function (reply,rate,err) {
+                    if (err) {
+                        console.log("error response or timeout exceeded" + err.error);
+                    }
+                    if (reply) {
+                        // store the authenticated token, which may be different from the request token (!)
+                        alert("Autenticou! ou assim espero kk");
+                        $("#tweet-btn").removeClass("disabled");
+                        cb.setToken(reply.oauth_token, reply.oauth_token_secret);
+                    }
 
-                // if you need to persist the login after page reload,
-                // consider storing the token in a cookie or HTML5 local storage
-            }
-        );
+                    // if you need to persist the login after page reload,
+                    // consider storing the token in a cookie or HTML5 local storage
+                }
+            );
+        }
     });
 
     $("#tweet-btn").click( function() {
-        cb.__call(
-            "statuses_update",
-            {"status": document.getElementById("tweet").value},
-            function (reply, rate, err) {
-                if(reply.httpstatus === 200) {
-                    alert("Twitou! ou assim espero tambem kk");
-                }
-                console.log(reply);
-            });
+        if(!$("#tweet-btn").hasClass("disabled")) {
+            cb.__call(
+                "statuses_update",
+                {"status": document.getElementById("tweet").value},
+                function (reply, rate, err) {
+                    if(reply.httpstatus === 200) {
+                        alert("Twitou! ou assim espero tambem kk");
+                    }
+                    console.log(reply);
+                });
+        }
     });
 });

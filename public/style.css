@@ -27,6 +27,25 @@
     opacity: 0.9;
 }
 
+#robotics {
+    background-image: url("robot.jpg");
+    opacity: 1;
+}
+
+#twitter {
+    background-image: url("twitter.jpg");
+    opacity: 1;
+}
+
+#p5js {
+    background-image: url("p5js.jpg");
+    opacity: 1;
+}
+
+.robotica-fonts {
+    color: #FDFD96;
+}
+
 .disabled {
   cursor: not-allowed;
 }
