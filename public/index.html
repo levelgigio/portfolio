@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, initial-scale = 1">
-        <title>Portfólio de Giovanni Forastieri</title>
+        <title>Giovanni Forastieri</title>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
 
@@ -35,7 +35,7 @@
     </head>
     <body>
         <!--------------JUMBOTRON-------------->
-        <div class="jumbotron">
+        <div class="jumbotron front">
             <!--------------NAVBAR-------------->
             <nav class="navbar fixed-top navbar-expand-md navbar-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-itens">
@@ -48,7 +48,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Projetos <i class="fas fa-project-diagram"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index: 1001;">
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="#">Projetos Web</a>
                                 <a class="dropdown-item" href="#">Projetos C++</a>
                                 <a class="dropdown-item" href="#">Projetos Eletronica</a>
@@ -68,19 +68,19 @@
             </nav>
             <!--------------BANNER-------------->
             <div>
-                <div class="d-flex p-0" style="color: orangered;">
-                    <h1 class="px-2 my-0" style="font-family: 'Jockey One', sans-serif; font-size: 400%; background-color: black;">GIOVANNI</h1>
+                <div class="d-flex p-0">
+                    <h1 class="px-2 my-0 front-fonts" style="font-size: 400%; ">GIOVANNI</h1>
                 </div>
-                <div class="d-flex p-0" style="color: orangered;">
-                    <h1 class="px-2" style="font-family: 'Jockey One', sans-serif; font-size: 400%; background-color: black;">FORASTIERI</h1>
+                <div class="d-flex p-0x">
+                    <h1 class="px-2 front-fonts" style="font-size: 400%;">FORASTIERI</h1>
                 </div>
             </div>
             <div>
-                <div class="d-flex p-0" style="color: orangered;">
-                    <p class="px-2 my-0" style="font-family: 'Lato', sans-serif; font-size: 150%; background-color: black;">Tecnico em Automacao Industrial//</p>
+                <div class="d-flex p-0">
+                    <p class="px-2 my-0 front-fonts front-fonts-sub" style="font-size: 150%;">Tecnico em Automacao Industrial//</p>
                 </div>
-                <div class="d-flex p-0" style="color: orangered;">
-                    <p class="px-2" style="font-family: 'Lato', sans-serif; font-size: 150%; background-color: black;">//Futuro Engenheiro de Computacao</p>
+                <div class="d-flex p-0">
+                    <p class="px-2 front-fonts front-fonts-sub" style="font-size: 150%;">//Futuro Engenheiro de Computacao</p>
                 </div>
             </div>
         </div>
@@ -207,8 +207,9 @@
         <!--------------C++ Projects-------------->
         <div class="container-fluid py-5 px-5" style="background-color: black;">
             <div class="row py-5 px-5">
-                <div class="col-lg-7 py-5 px-5">
+                <div class="col-lg-7 py-5 px-5" style="color: whitesmoke;">
                     <h1>Projetos utilizando C++ e Allegro</h1>
+                    <p class="py-3 px-3">Exigido pela disciplina de Técnicas de Programação, Hunter's Quest e um jogo de plataforma 2D de 1 a 2 jogadores.</p>
                 </div>
                 <div id="cppCarousel" class="col-lg-5 carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -218,14 +219,25 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="giovanni_face.jpg" alt="First slide">
+                            <img class="d-block w-100" src="hunters_quest_01.png" width="400" height="400">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Rosto do Giovanni</h5>
-                                <p>2018</p>
+                                <h5>Hunter's Quest</h5>
+                                <p>2017</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="giovanni_logo.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="hunters_quest_02.png" width="400" height="400">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Hunter's Quest</h5>
+                                <p>2017</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="hunters_quest_03.png" width="400" height="400">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Hunter's Quest</h5>
+                                <p>2017</p>
+                            </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#cppCarousel" role="button" data-slide="prev">
@@ -240,7 +252,7 @@
         <!--------------Last.fm Fetcher-------------->
         <div class="container-fluid py-5 px-5" id="last_fm_fetcher">
             <div class="">
-                <h1 style="color: orangered"><a href="http://last.fm/" target="_blank">Last.fm</a> Fetcher</h1>
+                <h1 style="color: orangered"><a href="http://last.fm/" target="_blank"><i class="fab fa-lastfm-square fa-1x"></i> Last.fm</a> Fetcher</h1>
             </div>
             <div class="row py-2 px-2">
                 <div class="form-group col-lg-5 py-2 px-5 my-auto">
@@ -250,7 +262,8 @@
                     <span title="Busque por levelgigio para saber os meus artistas mais ouvidos da semana"><input class="form-control" id="last-nickname" placeholder="Entre com um apelido do Last.fm"></span>
                     <button type="button" class="btn btn-dark float-right" id="fetch-btn">Fetch</button>
                 </div>
-                <div class="col-lg-7 py-2 px-5 my-0" id="fill-response" style="color: orangered; font-size: 120%;">
+                <div class="col-lg-7 py-2 px-5 my-0"  style="color: orangered; font-size: 120%; background-color: black; border-radius: 10px; opacity: 0.9">
+                    <p id="fill-response"></p>
                 </div>
             </div>
 
@@ -258,10 +271,9 @@
         <!--------------Twitter-------------->
         <div class="container-fluid py-5 px-5" id="twitter" style="background-color: #1DA1F2;">
             <div class="row py-2 px-2">
-
                 <div class="col-lg-5 py-0 px-0">
                     <div class="mt-0">
-                        <h1 style="color: orangered"><a href="https://twitter.com/" target="_blank">Twitter</a> App</h1>
+                        <h1 style="color: orangered"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-1x"></i> Twitter</a> App</h1>
                     </div>
 
                     <p class="py-2 px-5 my-auto">WebApp que utiliza a biblioteca Codebird para fazer tweets por meio da API do Twitter.
@@ -287,6 +299,13 @@
         <!--------------EMAIL-------------->
 
         <!--------------FOOTER-------------->
-
+        <div class="container-fluid" style="background-color: black;">
+            <div class="row">
+                <div class="col-12 text-center px-2 pt-2" style="color: darkgray;">
+                    <p class="m-0">Criado com Bootstrap por Giovanni Forastieri</p>
+                    <p class="">Ultima atualizacao: 23/08/2018</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

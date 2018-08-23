@@ -1,10 +1,25 @@
 .jumbotron {
-    background-image: url("electronic_circuit.jpeg");
-    opacity: 0.9;
-    background-size: cover;
+    
     padding-bottom: 18%;
     padding-top: 18%;
     border-radius: 0;
+}
+
+.front {
+    background-image: url("electronic_circuit.jpeg");
+    opacity: 0.9;
+    background-size: cover;
+}
+
+.front-fonts {
+    color: orangered;
+    font-family: 'Jockey One', sans-serif; 
+
+    background-color: black;
+}
+
+.front-fonts-sub {
+    font-family: 'Lato', sans-serif;
 }
 
 #last_fm_fetcher {
