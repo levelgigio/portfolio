@@ -2,10 +2,7 @@
     background-image: url("electronic_circuit.jpeg");
     opacity: 0.9;
     background-size: cover;
-    padding-bottom: 20%;
-    padding-top: 20%;
-}
-
-.banner-content {
-    color: orangered;
+    padding-bottom: 18%;
+    padding-top: 18%;
+    border-radius: 0;
 }
