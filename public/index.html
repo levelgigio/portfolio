@@ -16,10 +16,10 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-        
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-        
+
 
         <link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -35,46 +35,46 @@
         <script src="twitterAPI.js"></script>
 
         <script src="playground.js"></script>
-        
+
         <script src="playground_statistics.js"></script>
 
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!--------------JUMBOTRON-------------->
-        <div class="jumbotron front">
-            <!--------------NAVBAR-------------->
-            <nav class="navbar fixed-top navbar-expand-md navbar-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-itens">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar-itens">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Sobre <i class="fas fa-user-circle"></i></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Projetos <i class="fas fa-project-diagram"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#cppProjects">Projetos C++</a>
-                                <a class="dropdown-item" href="#p5Projects">Projetos p5.js</a>
-                                <a class="dropdown-item" href="#roboticaProjects">Projetos Eletronica</a>
-                                <a class="dropdown-item" href="#apiProjects">Projetos API</a>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/levelgigio/" target="_blank">Github <i class="fab fa-github"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.linkedin.com/in/giovanni-forastieri-387745111/" target="_blank">LinkedIn <i class="fab fa-linkedin"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato <i class="fas fa-envelope"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <!--------------BANNER-------------->
+        <!--------------NAVBAR-------------->
+        <nav class="navbar fixed-top navbar-expand-md" style="mix-blend-mode: luminosity;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-itens">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-itens">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre <i class="fas fa-user-circle"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Projetos <i class="fas fa-project-diagram"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#cppProjects">Projetos C++</a>
+                            <a class="dropdown-item" href="#p5Projects">Projetos p5.js</a>
+                            <a class="dropdown-item" href="#roboticaProjects">Projetos Eletronica</a>
+                            <a class="dropdown-item" href="#apiProjects">Projetos API</a>
+                            <a class="dropdown-item" href="#dbProjects">Projetos Banco de Dados</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/levelgigio/" target="_blank">Github <i class="fab fa-github"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/giovanni-forastieri-387745111/" target="_blank">LinkedIn <i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato <i class="fas fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--------------JUMBOTRON BANNER-------------->
+        <div class="jumbotron front" style="z-index: 9999999;">
             <div>
                 <div class="d-flex p-0">
                     <h1 class="px-2 my-0 front-fonts" style="font-size: 400%; ">GIOVANNI</h1>
@@ -340,11 +340,12 @@
         </div>
         <!--------------Twitter-------------->
         <div class="container-fluid py-lg-5 px-lg-5 py-5 px-4" id="twitter" style="background-color: #1DA1F2;">
-            <div class="mt-0">
-                <h1 style="color: orangered"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-1x"></i> Twitter</a> App</h1>
-            </div>
+
             <div class="row py-2 px-2">
                 <div class="col-lg-5 col-12 py-lg-0 px-lg-3 py-0 px-3">
+                    <div class="mt-0">
+                        <h1 style="color: orangered"><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-1x"></i> Twitter</a> App</h1>
+                    </div>
                     <p style="text-align: justify;" class="py-lg-2 px-lg-5 py-0 px-3 my-auto"><i>Web App</i> feito por mim, que utiliza a biblioteca <a href="https://github.com/jublonet/codebird-js" target="_blank">Codebird</a> para fazer tweets por meio da <a href="https://developer.twitter.com/en/docs.html" target="_blank">API do Twitter. </a> <a href="#" target="_blank" style="text-decoration: none; color: inherit;">(Repositório Git <i class="fas fa-arrow-alt-circle-right"></i>)</a>
                         <br><br>Tutorial de uso: Autorizar > Preencher o PIN > Autenticar > Escrever um tweet > Twittar.</p>
                 </div>
@@ -363,44 +364,45 @@
         </div>
         <!--------------PLAYGROUND-------------->
         <div class="container-fluid py-lg-5 px-lg-5 py-5 px-4" style="background-color: indianred;">
-            <div class="mt-0">
-                <h1 style="color: black"><i class="fas fa-basketball-ball fa-1x"></i> Playground</h1>
-            </div>
+            <a name="dbProjects"></a>
             <div class="row py-2 px-0">
                 <div class="col-lg-4 col-12 py-lg-0 px-lg-1 py-0 px-3">
+                    <div class="mt-0">
+                        <h1 style="color: black"><i class="fas fa-basketball-ball fa-1x"></i> Playground</h1>
+                    </div>
                     <p style="text-align: justify;" class="py-lg-2 px-lg-5 py-0 px-3 my-auto">Sinta-se a vontade para deixar aqui um comentário anônimo e ler os todos os outros já feitos para mim!<br><br>Funcionalidade implementada com Express + MongoDB. <a href="#" target="_blank" style="text-decoration: none; color: inherit;">(Repositório Git <i class="fas fa-arrow-alt-circle-right"></i>)</a></p>
                 </div>
-                <div class="col-lg-4 col-12 py-lg-0 px-lg-1 pt-3 px-3">
+                <div class="col-lg-4 col-12 py-lg-0 px-lg-1 pt-3 px-3 mt-lg-4">
                     <div class="form-group">
                         <input class="form-control" id="playground-name" placeholder="Digite um Nome" style="opacity: 0.9;" value="Anon">
                         <textarea class="form-control" id="playground-text" placeholder="Digite um comentario para mim!" rows="4" style="opacity: 0.9;"></textarea>
                         <button type="button" class="btn btn-dark btn-block disabled" id="playground-btn">Enviar</button>
                     </div>
                 </div>
-                <div class="col-lg-4 col-12 py-lg-0 px-lg-1 pb-3 px-3">
+                <div class="col-lg-4 col-12 py-lg-0 px-lg-1 pb-3 px-3 mt-lg-4">
                     <textarea class="form-control" id="playground-messages" rows="7" style="opacity: 0.9;" readonly></textarea>
                 </div>
             </div>
         </div>
         <!--------------PLAYGROUND CHART-------------->
         <div class="container-fluid py-lg-5 px-lg-5 py-5 px-4" style="background-color: whitesmoke;">
-            <div class="mt-0">
-                <h1 style="color: orangered"><i class="fas fa-chart-bar"></i> Playground Chart</h1>
-            </div>
             <div class="row py-2 px-0">
                 <div class="col-lg-4 col-12 py-lg-0 px-lg-1 py-1 px-3">
+                    <div class="mt-0">
+                        <h1 style="color: orangered"><i class="fas fa-chart-bar"></i> Playground Chart</h1>
+                    </div>
                     <p style="text-align: justify;" class="py-lg-2 px-lg-5 py-0 px-3 my-auto">Gráfico da quantidade de comentários recebidos no Playground nos últimos 12 meses.<br><br>Funcionalidade implementada por mim com a biblioteca <a href="https://www.chartjs.org/" target="_blank">Chart.js</a>.</p>
                 </div>
-                <div class="col-lg-7 col-12 py-lg-0 px-lg-1 py-1 px-0">
-                    <canvas id="canvas"></canvas>
+                <div class="col-lg-7 col-12 py-lg-0 px-lg-1 py-0 pr-4">
+                    <canvas id="canvas" height="175px"></canvas>
                 </div>
             </div>
         </div>
         <!--------------CONTATO-------------->
         <div class="container-fluid py-lg-5 px-lg-5 py-md-5 px-md-5 py-5 px-4" style="background-color: black; color: darkgray;">
-            
+            <a name="contato"></a>
             <div>
-                <h1>Contato</h1>
+                <h1><i class="fas fa-address-book"></i> Contato</h1>
             </div>
             <div class="row py-2 px-2">
                 <div class="col-lg-4 col-12" align="center">

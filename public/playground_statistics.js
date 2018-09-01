@@ -34,7 +34,7 @@ $(document).ready(() => {
                 position: 'top',
             },
             title: {
-                display: true,
+                display: false,
                 text: 'Comentários por mês'
             },
             scales: {
