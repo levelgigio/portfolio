@@ -37,8 +37,13 @@ $(document).ready(() => {
         }
 
         $.post(window.location.protocol + '//' + window.location.host + '/new_message', message, (response) => {
-            if(response.status === "ok")
+            if(response.status === "ok") {
+                $("#playground-text").val("");
                 update_messages();   
+                get_playground_data((data) => {
+                    set_playground_graph_data(data);
+                });
+            }
         });
     });
 });
